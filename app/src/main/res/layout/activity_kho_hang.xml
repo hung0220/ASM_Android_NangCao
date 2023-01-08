@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Kho_Hang_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BDC3"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/editTimKiemKhoHang"
+                android:layout_width="278dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="#F6F6FB"
+                android:background="@drawable/boder_timkiem"
+                android:drawableRight="@drawable/search"
+                android:ems="10"
+                android:hint="Tìm Kiếm"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/imgUserKhoHang"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="52dp"
+                android:padding="5dp"
+                android:src="@drawable/admin">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btnMore"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:padding="5dp"
+                android:src="@drawable/menua"
+                android:text="More" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách sản phẩm"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:dividerHeight="10.0sp"
+      ></ListView>
+    <ImageView
+        android:id="@+id/wwww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+
+    <ImageView
+        android:id="@+id/ImgAdd"
+        android:layout_marginTop="-100dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/add"/>
+
+<!--        <RelativeLayout-->
+
+<!--            android:gravity="bottom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <FrameLayout-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:context=".Kho_Hang_Activity">-->
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/fab"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_gravity="bottom|right"-->
+<!--                    android:layout_marginBottom="12dp"-->
+<!--                    android:src="@drawable/add"-->
+
+<!--                    app:fabSize="normal" />-->
+
+
+<!--            </FrameLayout>-->
+
+
+<!--        </RelativeLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Home_Activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BDC3"
+      >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/editTimKiemHome"
+                android:layout_width="278dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="13dp"
+
+                android:backgroundTint="#EFE6E6"
+                android:background="@drawable/boder_timkiem"
+                android:drawableRight="@drawable/search"
+                android:ems="10"
+                android:hint="Tìm Kiếm"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="52dp"
+                android:padding="5dp"
+                android:src="@drawable/admin">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btnMore"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:padding="5dp"
+                android:src="@drawable/menua"
+                android:text="More" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+
+
+<RelativeLayout
+    android:id="@+id/re"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.smarteist.autoimageslider.SliderView
+
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-6dp"
+        android:background="#B2D0DA"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|left"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="1dp"
+        app:sliderIndicatorSelectedColor="#ACACAC"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+    <LinearLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/qt"
+    android:layout_below="@+id/image_slider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <GridView
+        android:id="@+id/lvhome"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"></GridView>
+</LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>

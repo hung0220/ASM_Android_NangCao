@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Login_Activity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:layout_weight="0.1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Ký"
+                android:textSize="26sp"/>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gmail Đăng Kí *"
+                />
+
+            <EditText
+                android:id="@+id/edtGmailDangKi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/cuttom_input"
+                android:drawableStart="@drawable/mail"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Email"
+
+                android:paddingStart="11dp"
+                android:paddingEnd="11dp"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu *"
+                />
+
+            <EditText
+                android:id="@+id/edtPassDangki"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/cuttom_input"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Pass"
+                android:inputType="textPassword"
+                android:paddingStart="11dp"
+                android:paddingEnd="11dp"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập lại mật khẩu *"
+                />
+
+            <EditText
+                android:id="@+id/edtPassDangkiLai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/cuttom_input"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Pass"
+                android:paddingStart="11dp"
+                android:paddingEnd="11dp"
+                android:textSize="14sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quên Gmail/Mật khẩu?"
+                android:textColor="#00BDC3"
+                android:textSize="13dp"
+                android:gravity="right"
+                android:layout_marginTop="12dp"
+                />
+            <Button
+                android:id="@+id/btnDangki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng kí"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#00BDC3"
+                />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textSize="13dp"
+                android:layout_marginLeft="65dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã có tài khoản?"/>
+
+            <TextView
+                android:id="@+id/txtDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-18dp"
+                android:text=" Đăng nhập ngay"
+                android:textColor="#00BDC3"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Hoặc đăng nhập / đăng kí bằng"/>
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="140dp"
+                android:src="@drawable/icon_fb"
+                />
+            <ImageView
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-50dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_gg"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Densign @HungHau"
+                android:layout_marginTop="20dp"
+                android:textColor="#515252"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

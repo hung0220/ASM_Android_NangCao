@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F8D2CF"
+    android:orientation="vertical"
+    android:layout_margin="2dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@drawable/boder_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <ImageView
+                android:id="@+id/imgMotDongHome"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/cf3"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+
+            android:layout_gravity="center"
+            android:background="#F1E9D4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtTenMotDongHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cà phê nguyên chất 500g"
+                android:textSize="19sp"
+                android:textColor="#2B2B2B"
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtGiaMotDongHome"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="99.000.000đ"
+                android:textSize="17sp"
+                android:textColor="#8E100B"
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtGhiChuMotDongHome"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Không có gì mô tả ở đây cả nhé viết cho vui thôi.."
+                android:textSize="13sp"
+                android:textColor="#434141"
+                />
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnMuaNgay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00BDC3"
+            android:text="Mua Ngay"/>
+
+    </LinearLayout>
+</LinearLayout>

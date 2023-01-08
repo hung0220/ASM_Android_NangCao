@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Set màu nền-->
+
+<stroke android:width="1dp"
+    android:color="#1C1C1C">
+
+</stroke>
+<!--    <gradient-->
+<!--        android:angle="135"-->
+<!--        android:type="linear"-->
+<!--        android:centerColor="#F4EDAC"-->
+<!--        android:endColor="#E19CB3"-->
+<!--        android:startColor="#99DAE3"-->
+<!--        ></gradient>-->
+    <solid
+        android:color="#BCEAF4F8"
+        ></solid>
+
+    <!-- các thuộc tính căn chỉnh-->
+    <padding
+        android:top="5dp"
+        android:left="5sp"
+        android:right="5dp"
+        android:bottom="5dp" >
+    </padding>
+
+    <!-- và đây là bán kính đường tròn ở 4 góc -->
+    <corners
+        android:radius="15dp" >
+    </corners>
+</shape>
